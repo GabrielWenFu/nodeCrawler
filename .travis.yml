@@ -11,4 +11,4 @@ after_script:
   - git config user.email "guowenfu@heartsone.net"
   - git add .
   - git commit -m "Node sever"
-  - git push --force --quiet "https://${GITHUB_TOKEN}@github.com/GabrielWenFu/nodeCrawler.git" master:master
+  - git push --force --quiet "https://${GITHUB_TOKEN}@github.com/GabrielWenFu/nodeCrawler.git" master:gh-pages
