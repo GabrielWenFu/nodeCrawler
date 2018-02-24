@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+	<title>node爬虫</title>
+	<meda charset= 'utf-8'/>
+	<link href="/style.css" rel="stylesheet" type="text/css"/>
+	<link rel="icon" href="/favicon.ico"/>
+</head>
+<html>
+<body>
+	<ul>
+		{{#each data}}
+		{{data}}
+		<li>
+			<img src = {{imgUrl}} alt = {{index}} onerror = imgError(this)>
+			<p>{{title}}</p>
+		</li>
+		{{/each}}
+	</ul>
+</body>
+<script>
+ function imgError(event){
+ 	event.parentNode.style.display = 'none'
+ }
+</script>
+</html>

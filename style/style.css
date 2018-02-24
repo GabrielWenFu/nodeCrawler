@@ -1,0 +1,39 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+ul,li{
+	list-style: none;
+}
+ul{
+	font-size: 0;
+	max-width: 880px;
+	margin: auto;
+}
+li{
+	display: inline-block;
+	margin:10px;
+}
+li:hover img{
+	margin-top: -1px;
+	margin-bottom:1px;
+}
+img{
+	border: none;
+	width: 200px;
+	height: 200px;
+	border-radius: 6px;
+}
+a{
+	text-decoration-line: none;
+}
+p{
+	font-size: 14px;
+	color: #b49436;
+	width: 200px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	margin-top: 8px;
+}

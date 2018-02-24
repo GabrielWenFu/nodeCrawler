@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - "node"
+branches:
+  only: master
+script:
+  - node crawler
+after_script:
+  - git init
+  - git config user.name "guowenfu"
+  - git config user.email "guowenfu@heartsone.net"
+  - git add .
+  - git commit -m "Node sever"
+  - git push --force --quiet "https://${GITHUB_TOKEN}@github.com/GabrielWenFu/nodeCrawler.git" master:master
